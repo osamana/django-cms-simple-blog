@@ -3,6 +3,7 @@ https://control.divio.com/api/v1/apps/serve/aldryn-addons/1.0.2/24f5d1c8-66fe-43
 https://control.divio.com/api/v1/apps/serve/aldryn-django/1.8.16.3/a1a210ac-07fd-4ab0-b373-98c87ac64327/aldryn-django-1.8.16.3.tar.gz#egg=aldryn-django==1.8.16.3
 https://control.divio.com/api/v1/apps/serve/aldryn-sso/1.1.10/b9ebff5c-5bca-4129-9436-a2a5e5c92064/aldryn-sso-1.1.10.tar.gz#egg=aldryn-sso==1.1.10
 https://control.divio.com/api/v1/apps/serve/aldryn-devsync/1.1.2/42c1ce27-4139-4c0d-a2ba-fffe2db318f8/aldryn-devsync-1.1.2.tar.gz#egg=aldryn-devsync==1.1.2
+https://control.divio.com/api/v1/apps/serve/djangocms-link/2.0.3/aaf81b7e-41d6-43c0-bba2-6fa23a429668/djangocms-link-2.0.3.tar.gz#egg=djangocms-link==2.0.3
 https://control.divio.com/api/v1/apps/serve/djangocms-text-ckeditor/3.3.1.1/4c412842-e6bb-465d-a2ab-6d051277a7eb/djangocms-text-ckeditor-3.3.1.1.tar.gz#egg=djangocms-text-ckeditor==3.3.1.1
 https://control.divio.com/api/v1/apps/serve/django-filer/1.2.5.1/76ee6a08-6d1c-432d-b2c0-e92cd0eda59d/django-filer-1.2.5.1.tar.gz#egg=django-filer==1.2.5.1
 # </INSTALLED_ADDONS>
