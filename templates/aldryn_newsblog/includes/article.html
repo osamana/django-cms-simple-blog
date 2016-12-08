@@ -21,7 +21,7 @@
         </a>
         <p class="post-meta"> Posted by
             {% include "aldryn_newsblog/includes/author.html" with author=article.author %}
-            on {{ article.publishing_date|date }}
+            on {{ article.publishing_date|date:"F d, Y" }}
         </p></div>
     <hr>
 
