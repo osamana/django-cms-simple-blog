@@ -12,7 +12,7 @@
             {% if article.lead_in %}
                 <h3 class="post-subtitle">
                     {% if not detail_view %}
-                        {% render_model article "lead_in" "" "" "truncatewords:'20'" %}
+                        {% render_model article "lead_in" "" "" "truncatewords:'20'|striptags" %}
                     {% else %}
                         {% render_model article "lead_in" %}
                     {% endif %}
