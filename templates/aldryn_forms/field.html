@@ -3,29 +3,31 @@
 {% if field %}
 
     <div class="row control-group">
-    <div class="form-group col-xs-12 floating-label-form-group controls">
-    {% comment %}
+        <div class="form-group col-xs-12 floating-label-form-group controls">
+            {% comment %}
     {# available conditions #}
     {# if field.field.required %} required{% endif %}
     {% if field.errors %} error{% endif %}
     {% endcomment %}
 
-    <label for="{{ field.id_for_label }}">
-        {{ field.label }}
-        {% if field.field.required %}
-            <abbr title="{% trans "Required field" %}">*</abbr>
-        {% endif %}
-    </label>
+            <label for="{{ field.id_for_label }}">
+                {{ field.label }}
+                {% if field.field.required %}
+                    <abbr title="{% trans "Required field" %}">*</abbr>
+                {% endif %}
+            </label>
 
-    {% render_form_widget field class=instance.custom_classes %}
+            {% render_form_widget field class=instance.custom_classes %}
 
-    {% if field.errors %}
-        {% for error in field.errors %}
-            <p>{{ error }}</p>
-        {% endfor %}
-    {% endif %}
+            {% if field.errors %}
+                {% for error in field.errors %}
+                    <p>{{ error }}</p>
+                {% endfor %}
+            {% endif %}
 
-    {% if field.help_text %}
-        <p>{{ field.help_text }}</p>
-    {% endif %}
+            {% if field.help_text %}
+                <p>{{ field.help_text }}</p>
+            {% endif %}
+        </div>
+    </div>
 {% endif %}
