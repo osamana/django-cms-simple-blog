@@ -14,7 +14,7 @@
                     {% if not detail_view %}
                         {% render_model article "lead_in" "" "" "truncatewords:'20'|striptags" %}
                     {% else %}
-                        {% render_model article "lead_in" %}
+                        {% render_model article "lead_in" "" "" "striptags" %}
                     {% endif %}
                 </h3>
             {% endif %}
