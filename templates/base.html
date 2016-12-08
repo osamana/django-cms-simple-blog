@@ -40,6 +40,15 @@
     <!-- Divio Cloud -->
     {{ ALDRYN_SNAKE.render_head }}
 
+    <!-- django CMS toolbar adjustment -->
+    {% if request.toolbar %}
+        <style>
+            .cms-toolbar-expanded .navbar-custom {
+                margin-top: 45px;
+            }
+        </style>
+    {% endif %}
+
 </head>
 
 <body>
@@ -60,12 +69,12 @@
             <a class="navbar-brand" href="index.html">Start Bootstrap</a>
         </div>
 
-       <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse"id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-            {% show_menu 0 0 100 100 %}
-        </ul>
-    </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                {% show_menu 0 0 100 100 %}
+            </ul>
+        </div>
         <!-- /.navbar-collapse -->
     </div>
     <!-- /.container -->
@@ -149,10 +158,10 @@
 <script src="{% static 'js/clean-blog.min.js' %}"></script>
 
 <!-- django CMS -->
-    {% render_block "js" %}
+{% render_block "js" %}
 
-    <!-- Divio Cloud -->
-    {{ ALDRYN_SNAKE.render_tail }}
+<!-- Divio Cloud -->
+{{ ALDRYN_SNAKE.render_tail }}
 
 </body>
 
