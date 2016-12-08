@@ -167,6 +167,12 @@
 <!-- Theme JavaScript -->
 <script src="{% static 'js/clean-blog.min.js' %}"></script>
 
+<!-- django CMS -->
+    {% render_block "js" %}
+
+    <!-- Divio Cloud -->
+    {{ ALDRYN_SNAKE.render_tail }}
+
 </body>
 
 </html>
